@@ -8,7 +8,7 @@ Or, more precisely, an OAuth2 server whose endpoint URLs match those of KeyHub:
 
 In blatant disregard of the OAuth2 specs, it will blindly authenticate you as a random user and authorize any OAuth2 client (using the Authorization Code flow) to fetch your dummy profile. You can use it to log into any Cobra authenticator that supports KeyHub as a remote identity provider. Simply run ShmeeHub and change your `service.keyhub.url` JNDI value to `http://localhost:5000`.
 
-## Install in your existing Python environment
+## Install in your existing Python 3 environment
 
     git clone git@github:sanderevers/shmeehub
     cd shmeehub
@@ -16,7 +16,7 @@ In blatant disregard of the OAuth2 specs, it will blindly authenticate you as a 
     
 Run using `shmeehub` or `python -m shmeehub`.
 
-## Install in a clean Python virtualenv
+## Install in a clean Python 3 virtualenv
 
     virtualenv shmeehub
     source shmeehub/bin/activate
@@ -33,4 +33,4 @@ Run using `shmeehub` or `python -m shmeehub` while your virtualenv is activated.
     docker build -t shmeehub .
    
 Run using `docker run -it --rm 5000:80 --name shmeehub-instance shmeehub`.
-Or simply use `docker-compose up -d`
+Or simply use `docker-compose up -d`.
