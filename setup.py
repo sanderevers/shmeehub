@@ -22,4 +22,10 @@ setup(
             'shmeehub=shmeehub.__main__:main',
         ],
     },
+    url = 'https://github.com/sanderevers/shmeehub',
+    classifiers=[
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+        'Programming Language :: Python :: 3.6',
+    ],
 )
