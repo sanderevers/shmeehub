@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  shmeehub:
+    image: shmeehub
+    build:
+      context: .
+    ports:
+      - "5000:80"
+
