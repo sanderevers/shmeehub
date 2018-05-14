@@ -1,12 +1,12 @@
-# ShmeeHub - a stub for KeyHub
+# ShmeeHub - mocking KeyHub
 
-Or, more precisely, an OAuth2 server whose endpoint URLs match those of KeyHub:
+ShmeeHub is an OAuth2 server whose endpoint URLs match those of KeyHub:
 
     /login/oauth2/authorize
     /login/oauth2/token
     /keyhub/rest/v1/account/me
 
-In blatant disregard of the OAuth2 specs, it will blindly authenticate you as a random user and authorize any OAuth2 client (using the Authorization Code flow) to fetch your dummy profile. You can use it to log into any Cobra authenticator that supports KeyHub as a remote identity provider. Simply run ShmeeHub and change your `service.keyhub.url` JNDI value to `http://localhost:5000`.
+In blatant disregard of the OAuth2 specs, it will blindly authenticate you (over HTTP!) as a random user and authorize any OAuth2 client (using the Authorization Code flow) to fetch your dummy profile. You can use it to log into any Cobra authenticator that supports KeyHub as a remote identity provider. Simply run ShmeeHub and change your `service.keyhub.url` JNDI value to `http://localhost:5000`.
 
 ## Install in your existing Python 3 environment
 
