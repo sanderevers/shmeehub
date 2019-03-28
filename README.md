@@ -10,7 +10,7 @@ In blatant disregard of the OAuth2 specs, it will blindly authenticate you (over
 
 ## Install in your existing Python 3 environment
 
-    git clone git@github:sanderevers/shmeehub
+    git clone git@github.com:sanderevers/shmeehub
     cd shmeehub
     python setup.py install
     
@@ -28,7 +28,7 @@ Run using `shmeehub` or `python -m shmeehub` while your virtualenv is activated.
 
 ## Install using Docker
 
-    git clone git@github:sanderevers/shmeehub
+    git clone git@github.com:sanderevers/shmeehub
     cd shmeehub
     docker build -t shmeehub .
    
