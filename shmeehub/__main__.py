@@ -7,6 +7,7 @@ from .routes import bp
 def create_app():
     os.environ['AUTHLIB_INSECURE_TRANSPORT'] = '1'
     app = Flask(__name__)
+    app.config.from_pyfile('config.py')
     config_oauth(app)
     app.register_blueprint(bp, url_prefix='')
     return app

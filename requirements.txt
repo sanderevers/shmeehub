@@ -1,2 +1,2 @@
-Flask
-Authlib>=0.6
+Flask==1.0.2
+Authlib==0.10

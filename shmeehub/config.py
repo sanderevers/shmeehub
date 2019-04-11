@@ -1,0 +1,5 @@
+OAUTH2_JWT_ENABLED = True,
+OAUTH2_JWT_ALG = 'RS256'
+OAUTH2_JWT_ISS = 'http://localhost:5000'
+DUMMY_JWT_PRIV_KEY_PATH = 'dummyRS256.key'
+DUMMY_JWT_PUB_KEY_PATH = 'dummyRS256.key.pub'
